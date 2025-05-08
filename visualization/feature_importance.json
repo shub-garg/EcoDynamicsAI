@@ -1,0 +1,3187 @@
+{
+    "nodes": [
+        {
+            "id": "root_Otu0000028"
+        },
+        {
+            "id": "leaf_Otu0000033"
+        },
+        {
+            "id": "leaf_Otu0000066"
+        },
+        {
+            "id": "leaf_Otu0000023"
+        },
+        {
+            "id": "leaf_Otu0000093"
+        },
+        {
+            "id": "leaf_Otu0000034"
+        },
+        {
+            "id": "plant_OTU71"
+        },
+        {
+            "id": "leaf_Otu0000067"
+        },
+        {
+            "id": "plant_OTU65"
+        },
+        {
+            "id": "plant_OTU145"
+        },
+        {
+            "id": "leaf_Otu0000044"
+        },
+        {
+            "id": "WHC"
+        },
+        {
+            "id": "root_Otu0000019"
+        },
+        {
+            "id": "leaf_Otu0000001"
+        },
+        {
+            "id": "PPT_at"
+        },
+        {
+            "id": "plant_OTU204"
+        },
+        {
+            "id": "plant_OTU109"
+        },
+        {
+            "id": "leaf_Otu0000038"
+        },
+        {
+            "id": "plant_OTU149"
+        },
+        {
+            "id": "root_Otu0000003"
+        },
+        {
+            "id": "root_Otu0000238"
+        },
+        {
+            "id": "root_Otu0000102"
+        },
+        {
+            "id": "root_Otu0000005"
+        },
+        {
+            "id": "root_Otu0000026"
+        },
+        {
+            "id": "leaf_Otu0000077"
+        },
+        {
+            "id": "leaf_Otu0000063"
+        },
+        {
+            "id": "leaf_Otu0000078"
+        },
+        {
+            "id": "root_Otu0000011"
+        },
+        {
+            "id": "CN"
+        },
+        {
+            "id": "leaf_Otu0000157"
+        },
+        {
+            "id": "root_Otu0000156"
+        },
+        {
+            "id": "leaf_Otu0000052"
+        },
+        {
+            "id": "plant_OTU67"
+        },
+        {
+            "id": "leaf_Otu0000032"
+        },
+        {
+            "id": "plant_OTU78"
+        },
+        {
+            "id": "leaf_Otu0000016"
+        },
+        {
+            "id": "leaf_Otu0000365"
+        },
+        {
+            "id": "root_Otu0000050"
+        },
+        {
+            "id": "OC"
+        },
+        {
+            "id": "longitude"
+        },
+        {
+            "id": "plant_OTU10"
+        },
+        {
+            "id": "leaf_Otu0000100"
+        },
+        {
+            "id": "root_Otu0000258"
+        },
+        {
+            "id": "leaf_Otu0000051"
+        },
+        {
+            "id": "leaf_Otu0000009"
+        },
+        {
+            "id": "root_Otu0000063"
+        },
+        {
+            "id": "leaf_Otu0000094"
+        },
+        {
+            "id": "leaf_Otu0000036"
+        },
+        {
+            "id": "leaf_Otu0000152"
+        },
+        {
+            "id": "root_Otu0000006"
+        },
+        {
+            "id": "Calcium"
+        },
+        {
+            "id": "leaf_Otu0000058"
+        },
+        {
+            "id": "plant_OTU18"
+        },
+        {
+            "id": "plant_OTU1"
+        },
+        {
+            "id": "pH"
+        },
+        {
+            "id": "root_Otu0000051"
+        },
+        {
+            "id": "root_Otu0000046"
+        },
+        {
+            "id": "leaf_Otu0000030"
+        },
+        {
+            "id": "Phosphore"
+        },
+        {
+            "id": "leaf_Otu0000120"
+        },
+        {
+            "id": "leaf_Otu0000005"
+        },
+        {
+            "id": "plant_OTU202"
+        },
+        {
+            "id": "plant_OTU7"
+        },
+        {
+            "id": "plant_OTU113"
+        },
+        {
+            "id": "root_Otu0000030"
+        },
+        {
+            "id": "root_Otu0000002"
+        },
+        {
+            "id": "leaf_Otu0000096"
+        },
+        {
+            "id": "leaf_Otu0000084"
+        },
+        {
+            "id": "plant_OTU147"
+        },
+        {
+            "id": "PPT_wt"
+        },
+        {
+            "id": "leaf_Otu0000037"
+        },
+        {
+            "id": "leaf_Otu0000012"
+        },
+        {
+            "id": "Magnesium"
+        },
+        {
+            "id": "root_Otu0000020"
+        },
+        {
+            "id": "leaf_Otu0000027"
+        },
+        {
+            "id": "root_Otu0000070"
+        },
+        {
+            "id": "root_Otu0000122"
+        },
+        {
+            "id": "plant_OTU16"
+        },
+        {
+            "id": "MCMT"
+        },
+        {
+            "id": "plant_OTU15"
+        },
+        {
+            "id": "plant_OTU216"
+        },
+        {
+            "id": "leaf_Otu0000017"
+        },
+        {
+            "id": "plant_OTU72"
+        },
+        {
+            "id": "plant_OTU192"
+        },
+        {
+            "id": "leaf_Otu0000004"
+        },
+        {
+            "id": "PPT_sp"
+        },
+        {
+            "id": "Elevation"
+        },
+        {
+            "id": "root_Otu0000174"
+        },
+        {
+            "id": "root_Otu0000024"
+        },
+        {
+            "id": "leaf_Otu0000018"
+        },
+        {
+            "id": "root_Otu0000284"
+        },
+        {
+            "id": "leaf_Otu0000014"
+        },
+        {
+            "id": "leaf_Otu0000042"
+        },
+        {
+            "id": "leaf_Otu0000013"
+        },
+        {
+            "id": "Aluminium"
+        },
+        {
+            "id": "root_Otu0000144"
+        },
+        {
+            "id": "leaf_Otu0000074"
+        },
+        {
+            "id": "plant_OTU136"
+        },
+        {
+            "id": "root_Otu0000146"
+        },
+        {
+            "id": "leaf_Otu0000008"
+        },
+        {
+            "id": "root_Otu0000004"
+        },
+        {
+            "id": "root_Otu0000017"
+        },
+        {
+            "id": "root_Otu0000075"
+        },
+        {
+            "id": "leaf_Otu0000025"
+        },
+        {
+            "id": "leaf_Otu0000070"
+        },
+        {
+            "id": "leaf_Otu0000101"
+        },
+        {
+            "id": "leaf_Otu0000002"
+        },
+        {
+            "id": "plant_OTU83"
+        },
+        {
+            "id": "leaf_Otu0000137"
+        },
+        {
+            "id": "root_Otu0000064"
+        },
+        {
+            "id": "root_Otu0000007"
+        },
+        {
+            "id": "Sodium"
+        },
+        {
+            "id": "MAT"
+        },
+        {
+            "id": "Iron"
+        },
+        {
+            "id": "plant_OTU198"
+        },
+        {
+            "id": "root_Otu0000016"
+        },
+        {
+            "id": "leaf_Otu0000029"
+        },
+        {
+            "id": "leaf_Otu0000179"
+        },
+        {
+            "id": "root_Otu0000049"
+        },
+        {
+            "id": "root_Otu0000076"
+        },
+        {
+            "id": "plant_OTU88"
+        },
+        {
+            "id": "root_Otu0000001"
+        },
+        {
+            "id": "leaf_Otu0000115"
+        },
+        {
+            "id": "plant_OTU146"
+        },
+        {
+            "id": "root_Otu0000163"
+        },
+        {
+            "id": "leaf_Otu0000035"
+        },
+        {
+            "id": "leaf_Otu0000117"
+        },
+        {
+            "id": "plant_OTU8"
+        },
+        {
+            "id": "leaf_Otu0000015"
+        },
+        {
+            "id": "plant_OTU154"
+        },
+        {
+            "id": "PPT_sm"
+        },
+        {
+            "id": "leaf_Otu0000011"
+        },
+        {
+            "id": "plant_OTU87"
+        },
+        {
+            "id": "plant_OTU132"
+        },
+        {
+            "id": "leaf_Otu0000031"
+        },
+        {
+            "id": "Nitrogen"
+        },
+        {
+            "id": "root_Otu0000041"
+        },
+        {
+            "id": "leaf_Otu0000022"
+        },
+        {
+            "id": "leaf_Otu0000006"
+        },
+        {
+            "id": "root_Otu0000989"
+        },
+        {
+            "id": "plant_OTU27"
+        },
+        {
+            "id": "root_Otu0000100"
+        },
+        {
+            "id": "Potassium"
+        },
+        {
+            "id": "leaf_Otu0000068"
+        },
+        {
+            "id": "Manganese"
+        },
+        {
+            "id": "leaf_Otu0000109"
+        },
+        {
+            "id": "leaf_Otu0000073"
+        },
+        {
+            "id": "leaf_Otu0000003"
+        },
+        {
+            "id": "plant_Shannon"
+        },
+        {
+            "id": "root_Otu0000021"
+        },
+        {
+            "id": "leaf_Otu0000010"
+        },
+        {
+            "id": "root_Otu0000114"
+        },
+        {
+            "id": "latitude"
+        },
+        {
+            "id": "leaf_Otu0000089"
+        },
+        {
+            "id": "root_Otu0000009"
+        },
+        {
+            "id": "root_Otu0000121"
+        },
+        {
+            "id": "plant_OTU223"
+        },
+        {
+            "id": "SOM"
+        },
+        {
+            "id": "plant_richness"
+        },
+        {
+            "id": "root_Otu0000199"
+        },
+        {
+            "id": "leaf_Otu0000028"
+        },
+        {
+            "id": "leaf_Otu0000246"
+        },
+        {
+            "id": "leaf_Otu0000057"
+        },
+        {
+            "id": "leaf_Otu0000116"
+        },
+        {
+            "id": "plant_OTU159"
+        },
+        {
+            "id": "root_Otu0000058"
+        },
+        {
+            "id": "plant_OTU46"
+        }
+    ],
+    "links": [
+        {
+            "source": "plant_OTU8",
+            "target": "root_Otu0000041",
+            "gain": 8.8
+        },
+        {
+            "source": "Sodium",
+            "target": "root_Otu0000041",
+            "gain": 6.45
+        },
+        {
+            "source": "leaf_Otu0000093",
+            "target": "root_Otu0000041",
+            "gain": 5.68
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "root_Otu0000041",
+            "gain": 5.58
+        },
+        {
+            "source": "Aluminium",
+            "target": "root_Otu0000041",
+            "gain": 5.34
+        },
+        {
+            "source": "leaf_Otu0000038",
+            "target": "root_Otu0000121",
+            "gain": 5.43
+        },
+        {
+            "source": "PPT_sm",
+            "target": "root_Otu0000121",
+            "gain": 4.33
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "root_Otu0000121",
+            "gain": 4.13
+        },
+        {
+            "source": "Calcium",
+            "target": "root_Otu0000121",
+            "gain": 3.68
+        },
+        {
+            "source": "MCMT",
+            "target": "root_Otu0000121",
+            "gain": 3.17
+        },
+        {
+            "source": "leaf_Otu0000022",
+            "target": "leaf_Otu0000070",
+            "gain": 35.62
+        },
+        {
+            "source": "leaf_Otu0000044",
+            "target": "leaf_Otu0000070",
+            "gain": 29.22
+        },
+        {
+            "source": "Potassium",
+            "target": "leaf_Otu0000070",
+            "gain": 20.64
+        },
+        {
+            "source": "root_Otu0000001",
+            "target": "leaf_Otu0000070",
+            "gain": 20.39
+        },
+        {
+            "source": "root_Otu0000258",
+            "target": "leaf_Otu0000070",
+            "gain": 20.34
+        },
+        {
+            "source": "leaf_Otu0000028",
+            "target": "leaf_Otu0000058",
+            "gain": 3.51
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "leaf_Otu0000058",
+            "gain": 3.04
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "leaf_Otu0000058",
+            "gain": 2.41
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "leaf_Otu0000066",
+            "gain": 31.99
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000066",
+            "gain": 31.03
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000066",
+            "gain": 28.22
+        },
+        {
+            "source": "leaf_Otu0000101",
+            "target": "leaf_Otu0000066",
+            "gain": 27.39
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000066",
+            "gain": 27.1
+        },
+        {
+            "source": "leaf_Otu0000012",
+            "target": "root_Otu0000122",
+            "gain": 18.29
+        },
+        {
+            "source": "root_Otu0000163",
+            "target": "root_Otu0000122",
+            "gain": 6.21
+        },
+        {
+            "source": "root_Otu0000199",
+            "target": "root_Otu0000122",
+            "gain": 5.48
+        },
+        {
+            "source": "Iron",
+            "target": "root_Otu0000122",
+            "gain": 2.29
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "root_Otu0000122",
+            "gain": 1.78
+        },
+        {
+            "source": "PPT_sp",
+            "target": "leaf_Otu0000067",
+            "gain": 135.22
+        },
+        {
+            "source": "leaf_Otu0000002",
+            "target": "leaf_Otu0000067",
+            "gain": 80.01
+        },
+        {
+            "source": "MCMT",
+            "target": "leaf_Otu0000067",
+            "gain": 38.8
+        },
+        {
+            "source": "leaf_Otu0000073",
+            "target": "leaf_Otu0000067",
+            "gain": 32.93
+        },
+        {
+            "source": "PPT_sm",
+            "target": "leaf_Otu0000067",
+            "gain": 32.92
+        },
+        {
+            "source": "MAT",
+            "target": "leaf_Otu0000073",
+            "gain": 5.12
+        },
+        {
+            "source": "Elevation",
+            "target": "leaf_Otu0000073",
+            "gain": 4.41
+        },
+        {
+            "source": "leaf_Otu0000067",
+            "target": "leaf_Otu0000073",
+            "gain": 3.36
+        },
+        {
+            "source": "PPT_at",
+            "target": "leaf_Otu0000073",
+            "gain": 3.12
+        },
+        {
+            "source": "PPT_sm",
+            "target": "leaf_Otu0000073",
+            "gain": 2.53
+        },
+        {
+            "source": "PPT_wt",
+            "target": "leaf_Otu0000077",
+            "gain": 568.45
+        },
+        {
+            "source": "MCMT",
+            "target": "leaf_Otu0000077",
+            "gain": 348.56
+        },
+        {
+            "source": "plant_OTU146",
+            "target": "leaf_Otu0000077",
+            "gain": 229.58
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000077",
+            "gain": 107.61
+        },
+        {
+            "source": "plant_OTU192",
+            "target": "leaf_Otu0000077",
+            "gain": 97.65
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "leaf_Otu0000063",
+            "gain": 22.18
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "leaf_Otu0000063",
+            "gain": 15.96
+        },
+        {
+            "source": "leaf_Otu0000051",
+            "target": "leaf_Otu0000063",
+            "gain": 11.38
+        },
+        {
+            "source": "root_Otu0000100",
+            "target": "leaf_Otu0000063",
+            "gain": 3.92
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "leaf_Otu0000063",
+            "gain": 1.74
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000117",
+            "gain": 5.01
+        },
+        {
+            "source": "leaf_Otu0000116",
+            "target": "leaf_Otu0000117",
+            "gain": 4.59
+        },
+        {
+            "source": "leaf_Otu0000096",
+            "target": "leaf_Otu0000117",
+            "gain": 1.67
+        },
+        {
+            "source": "CN",
+            "target": "leaf_Otu0000117",
+            "gain": 1.39
+        },
+        {
+            "source": "root_Otu0000064",
+            "target": "leaf_Otu0000117",
+            "gain": 1.38
+        },
+        {
+            "source": "root_Otu0000144",
+            "target": "leaf_Otu0000116",
+            "gain": 13.23
+        },
+        {
+            "source": "leaf_Otu0000117",
+            "target": "leaf_Otu0000116",
+            "gain": 9.8
+        },
+        {
+            "source": "plant_OTU71",
+            "target": "leaf_Otu0000116",
+            "gain": 9.58
+        },
+        {
+            "source": "Aluminium",
+            "target": "leaf_Otu0000116",
+            "gain": 8.73
+        },
+        {
+            "source": "plant_OTU18",
+            "target": "leaf_Otu0000116",
+            "gain": 6.76
+        },
+        {
+            "source": "PPT_at",
+            "target": "root_Otu0000046",
+            "gain": 29.29
+        },
+        {
+            "source": "Sodium",
+            "target": "root_Otu0000046",
+            "gain": 21.93
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "root_Otu0000046",
+            "gain": 20.24
+        },
+        {
+            "source": "leaf_Otu0000033",
+            "target": "root_Otu0000046",
+            "gain": 18.64
+        },
+        {
+            "source": "root_Otu0000007",
+            "target": "root_Otu0000046",
+            "gain": 18.23
+        },
+        {
+            "source": "leaf_Otu0000010",
+            "target": "root_Otu0000050",
+            "gain": 20.62
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "root_Otu0000050",
+            "gain": 18.94
+        },
+        {
+            "source": "leaf_Otu0000089",
+            "target": "root_Otu0000050",
+            "gain": 18.52
+        },
+        {
+            "source": "leaf_Otu0000074",
+            "target": "root_Otu0000050",
+            "gain": 18.51
+        },
+        {
+            "source": "plant_Shannon",
+            "target": "root_Otu0000050",
+            "gain": 16.26
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "leaf_Otu0000074",
+            "gain": 23.55
+        },
+        {
+            "source": "root_Otu0000049",
+            "target": "leaf_Otu0000074",
+            "gain": 21.48
+        },
+        {
+            "source": "root_Otu0000238",
+            "target": "leaf_Otu0000074",
+            "gain": 19.42
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000074",
+            "gain": 17.61
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "leaf_Otu0000074",
+            "gain": 14.27
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "leaf_Otu0000100",
+            "gain": 7.91
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "leaf_Otu0000100",
+            "gain": 4.67
+        },
+        {
+            "source": "root_Otu0000011",
+            "target": "leaf_Otu0000100",
+            "gain": 1.21
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000100",
+            "gain": 1.14
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "leaf_Otu0000100",
+            "gain": 1.07
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000101",
+            "gain": 156.16
+        },
+        {
+            "source": "leaf_Otu0000052",
+            "target": "leaf_Otu0000101",
+            "gain": 151.28
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000101",
+            "gain": 149.08
+        },
+        {
+            "source": "Aluminium",
+            "target": "leaf_Otu0000101",
+            "gain": 113.87
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "leaf_Otu0000101",
+            "gain": 112.41
+        },
+        {
+            "source": "plant_OTU132",
+            "target": "leaf_Otu0000115",
+            "gain": 28.78
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000115",
+            "gain": 27.76
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "leaf_Otu0000115",
+            "gain": 23.59
+        },
+        {
+            "source": "root_Otu0000070",
+            "target": "leaf_Otu0000115",
+            "gain": 22.93
+        },
+        {
+            "source": "root_Otu0000024",
+            "target": "leaf_Otu0000115",
+            "gain": 18.74
+        },
+        {
+            "source": "plant_OTU113",
+            "target": "root_Otu0000284",
+            "gain": 2.99
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "root_Otu0000284",
+            "gain": 2.75
+        },
+        {
+            "source": "plant_OTU87",
+            "target": "root_Otu0000284",
+            "gain": 2.65
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "root_Otu0000284",
+            "gain": 2.52
+        },
+        {
+            "source": "MAT",
+            "target": "root_Otu0000284",
+            "gain": 2.52
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "root_Otu0000051",
+            "gain": 55.95
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "root_Otu0000051",
+            "gain": 17.5
+        },
+        {
+            "source": "root_Otu0000063",
+            "target": "root_Otu0000051",
+            "gain": 10.55
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "root_Otu0000051",
+            "gain": 3.14
+        },
+        {
+            "source": "root_Otu0000100",
+            "target": "root_Otu0000051",
+            "gain": 3.07
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "leaf_Otu0000006",
+            "gain": 993.46
+        },
+        {
+            "source": "leaf_Otu0000028",
+            "target": "leaf_Otu0000006",
+            "gain": 572.88
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "leaf_Otu0000006",
+            "gain": 397.31
+        },
+        {
+            "source": "leaf_Otu0000017",
+            "target": "leaf_Otu0000006",
+            "gain": 348.95
+        },
+        {
+            "source": "Magnesium",
+            "target": "leaf_Otu0000006",
+            "gain": 308.62
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "leaf_Otu0000012",
+            "gain": 141293.73
+        },
+        {
+            "source": "root_Otu0000046",
+            "target": "leaf_Otu0000012",
+            "gain": 100674.91
+        },
+        {
+            "source": "root_Otu0000114",
+            "target": "leaf_Otu0000012",
+            "gain": 73934.6
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000012",
+            "gain": 72987.88
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "leaf_Otu0000012",
+            "gain": 55826.22
+        },
+        {
+            "source": "Phosphore",
+            "target": "root_Otu0000156",
+            "gain": 47.14
+        },
+        {
+            "source": "plant_OTU27",
+            "target": "root_Otu0000156",
+            "gain": 27.0
+        },
+        {
+            "source": "Magnesium",
+            "target": "root_Otu0000156",
+            "gain": 20.69
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "root_Otu0000156",
+            "gain": 20.21
+        },
+        {
+            "source": "plant_OTU8",
+            "target": "root_Otu0000156",
+            "gain": 18.96
+        },
+        {
+            "source": "plant_OTU154",
+            "target": "leaf_Otu0000365",
+            "gain": 1.7
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000365",
+            "gain": 1.58
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000365",
+            "gain": 1.55
+        },
+        {
+            "source": "plant_OTU109",
+            "target": "leaf_Otu0000365",
+            "gain": 1.44
+        },
+        {
+            "source": "Nitrogen",
+            "target": "leaf_Otu0000365",
+            "gain": 1.28
+        },
+        {
+            "source": "root_Otu0000020",
+            "target": "leaf_Otu0000013",
+            "gain": 49.49
+        },
+        {
+            "source": "leaf_Otu0000038",
+            "target": "leaf_Otu0000013",
+            "gain": 14.51
+        },
+        {
+            "source": "plant_OTU149",
+            "target": "leaf_Otu0000013",
+            "gain": 13.54
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "leaf_Otu0000013",
+            "gain": 11.33
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "leaf_Otu0000013",
+            "gain": 8.32
+        },
+        {
+            "source": "plant_richness",
+            "target": "root_Otu0000989",
+            "gain": 23.09
+        },
+        {
+            "source": "plant_Shannon",
+            "target": "root_Otu0000989",
+            "gain": 20.04
+        },
+        {
+            "source": "root_Otu0000003",
+            "target": "root_Otu0000989",
+            "gain": 15.3
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000989",
+            "gain": 9.44
+        },
+        {
+            "source": "leaf_Otu0000070",
+            "target": "root_Otu0000989",
+            "gain": 8.18
+        },
+        {
+            "source": "leaf_Otu0000052",
+            "target": "root_Otu0000021",
+            "gain": 21.98
+        },
+        {
+            "source": "leaf_Otu0000152",
+            "target": "root_Otu0000021",
+            "gain": 16.46
+        },
+        {
+            "source": "leaf_Otu0000004",
+            "target": "root_Otu0000021",
+            "gain": 13.03
+        },
+        {
+            "source": "plant_OTU27",
+            "target": "root_Otu0000021",
+            "gain": 8.99
+        },
+        {
+            "source": "leaf_Otu0000115",
+            "target": "root_Otu0000021",
+            "gain": 7.68
+        },
+        {
+            "source": "root_Otu0000058",
+            "target": "root_Otu0000009",
+            "gain": 325.28
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "root_Otu0000009",
+            "gain": 71.96
+        },
+        {
+            "source": "root_Otu0000028",
+            "target": "root_Otu0000009",
+            "gain": 55.55
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "root_Otu0000009",
+            "gain": 37.4
+        },
+        {
+            "source": "root_Otu0000017",
+            "target": "root_Otu0000009",
+            "gain": 13.48
+        },
+        {
+            "source": "leaf_Otu0000063",
+            "target": "leaf_Otu0000011",
+            "gain": 152.28
+        },
+        {
+            "source": "leaf_Otu0000051",
+            "target": "leaf_Otu0000011",
+            "gain": 152.09
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "leaf_Otu0000011",
+            "gain": 92.32
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "leaf_Otu0000011",
+            "gain": 51.43
+        },
+        {
+            "source": "leaf_Otu0000100",
+            "target": "leaf_Otu0000011",
+            "gain": 39.45
+        },
+        {
+            "source": "leaf_Otu0000017",
+            "target": "leaf_Otu0000005",
+            "gain": 270.35
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "leaf_Otu0000005",
+            "gain": 142.12
+        },
+        {
+            "source": "Magnesium",
+            "target": "leaf_Otu0000005",
+            "gain": 100.53
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "leaf_Otu0000005",
+            "gain": 63.41
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "leaf_Otu0000005",
+            "gain": 41.49
+        },
+        {
+            "source": "SOM",
+            "target": "leaf_Otu0000004",
+            "gain": 4.35
+        },
+        {
+            "source": "OC",
+            "target": "leaf_Otu0000004",
+            "gain": 4.18
+        },
+        {
+            "source": "plant_OTU87",
+            "target": "leaf_Otu0000004",
+            "gain": 4.01
+        },
+        {
+            "source": "PPT_sm",
+            "target": "leaf_Otu0000004",
+            "gain": 3.93
+        },
+        {
+            "source": "leaf_Otu0000022",
+            "target": "leaf_Otu0000004",
+            "gain": 3.82
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000010",
+            "gain": 71.98
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000010",
+            "gain": 66.24
+        },
+        {
+            "source": "plant_OTU18",
+            "target": "leaf_Otu0000010",
+            "gain": 64.46
+        },
+        {
+            "source": "root_Otu0000070",
+            "target": "leaf_Otu0000010",
+            "gain": 61.39
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "leaf_Otu0000010",
+            "gain": 48.12
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000038",
+            "gain": 17.17
+        },
+        {
+            "source": "root_Otu0000020",
+            "target": "leaf_Otu0000038",
+            "gain": 15.9
+        },
+        {
+            "source": "plant_OTU88",
+            "target": "leaf_Otu0000038",
+            "gain": 15.02
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "leaf_Otu0000038",
+            "gain": 14.31
+        },
+        {
+            "source": "leaf_Otu0000031",
+            "target": "leaf_Otu0000038",
+            "gain": 11.11
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "root_Otu0000020",
+            "gain": 31.39
+        },
+        {
+            "source": "Iron",
+            "target": "root_Otu0000020",
+            "gain": 29.35
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000020",
+            "gain": 23.24
+        },
+        {
+            "source": "Magnesium",
+            "target": "root_Otu0000020",
+            "gain": 18.84
+        },
+        {
+            "source": "leaf_Otu0000067",
+            "target": "root_Otu0000020",
+            "gain": 17.62
+        },
+        {
+            "source": "leaf_Otu0000010",
+            "target": "root_Otu0000024",
+            "gain": 4.82
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "root_Otu0000024",
+            "gain": 4.81
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000024",
+            "gain": 4.69
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "root_Otu0000024",
+            "gain": 4.62
+        },
+        {
+            "source": "PPT_sp",
+            "target": "root_Otu0000024",
+            "gain": 4.59
+        },
+        {
+            "source": "root_Otu0000002",
+            "target": "root_Otu0000030",
+            "gain": 15.4
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000030",
+            "gain": 8.03
+        },
+        {
+            "source": "PPT_sp",
+            "target": "root_Otu0000030",
+            "gain": 4.02
+        },
+        {
+            "source": "leaf_Otu0000042",
+            "target": "root_Otu0000030",
+            "gain": 2.85
+        },
+        {
+            "source": "leaf_Otu0000002",
+            "target": "root_Otu0000030",
+            "gain": 2.8
+        },
+        {
+            "source": "leaf_Otu0000078",
+            "target": "leaf_Otu0000014",
+            "gain": 24.95
+        },
+        {
+            "source": "plant_OTU147",
+            "target": "leaf_Otu0000014",
+            "gain": 20.63
+        },
+        {
+            "source": "root_Otu0000049",
+            "target": "leaf_Otu0000014",
+            "gain": 17.67
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "leaf_Otu0000014",
+            "gain": 12.28
+        },
+        {
+            "source": "root_Otu0000019",
+            "target": "leaf_Otu0000014",
+            "gain": 12.19
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "leaf_Otu0000028",
+            "gain": 8.45
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "leaf_Otu0000028",
+            "gain": 7.14
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "leaf_Otu0000028",
+            "gain": 5.84
+        },
+        {
+            "source": "leaf_Otu0000058",
+            "target": "leaf_Otu0000028",
+            "gain": 5.48
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000028",
+            "gain": 1.18
+        },
+        {
+            "source": "leaf_Otu0000052",
+            "target": "root_Otu0000144",
+            "gain": 13.44
+        },
+        {
+            "source": "leaf_Otu0000120",
+            "target": "root_Otu0000144",
+            "gain": 11.51
+        },
+        {
+            "source": "Elevation",
+            "target": "root_Otu0000144",
+            "gain": 9.49
+        },
+        {
+            "source": "MCMT",
+            "target": "root_Otu0000144",
+            "gain": 8.82
+        },
+        {
+            "source": "CN",
+            "target": "root_Otu0000144",
+            "gain": 8.41
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "leaf_Otu0000029",
+            "gain": 9.4
+        },
+        {
+            "source": "root_Otu0000049",
+            "target": "leaf_Otu0000029",
+            "gain": 9.24
+        },
+        {
+            "source": "plant_OTU88",
+            "target": "leaf_Otu0000029",
+            "gain": 7.98
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000029",
+            "gain": 5.59
+        },
+        {
+            "source": "leaf_Otu0000035",
+            "target": "leaf_Otu0000029",
+            "gain": 4.88
+        },
+        {
+            "source": "root_Otu0000021",
+            "target": "leaf_Otu0000001",
+            "gain": 16.59
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "leaf_Otu0000001",
+            "gain": 11.19
+        },
+        {
+            "source": "plant_OTU113",
+            "target": "leaf_Otu0000001",
+            "gain": 10.12
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000001",
+            "gain": 7.52
+        },
+        {
+            "source": "PPT_at",
+            "target": "leaf_Otu0000001",
+            "gain": 7.35
+        },
+        {
+            "source": "leaf_Otu0000038",
+            "target": "leaf_Otu0000015",
+            "gain": 95.41
+        },
+        {
+            "source": "root_Otu0000007",
+            "target": "leaf_Otu0000015",
+            "gain": 90.0
+        },
+        {
+            "source": "Aluminium",
+            "target": "leaf_Otu0000015",
+            "gain": 81.91
+        },
+        {
+            "source": "leaf_Otu0000012",
+            "target": "leaf_Otu0000015",
+            "gain": 62.57
+        },
+        {
+            "source": "leaf_Otu0000004",
+            "target": "leaf_Otu0000015",
+            "gain": 58.93
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "root_Otu0000019",
+            "gain": 32.38
+        },
+        {
+            "source": "plant_OTU67",
+            "target": "root_Otu0000019",
+            "gain": 23.52
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "root_Otu0000019",
+            "gain": 17.67
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "root_Otu0000019",
+            "gain": 13.82
+        },
+        {
+            "source": "leaf_Otu0000014",
+            "target": "root_Otu0000019",
+            "gain": 9.74
+        },
+        {
+            "source": "leaf_Otu0000036",
+            "target": "leaf_Otu0000003",
+            "gain": 6.11
+        },
+        {
+            "source": "leaf_Otu0000001",
+            "target": "leaf_Otu0000003",
+            "gain": 5.55
+        },
+        {
+            "source": "Manganese",
+            "target": "leaf_Otu0000003",
+            "gain": 5.3
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000003",
+            "gain": 4.78
+        },
+        {
+            "source": "plant_OTU223",
+            "target": "leaf_Otu0000003",
+            "gain": 3.57
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "leaf_Otu0000017",
+            "gain": 10.9
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "leaf_Otu0000017",
+            "gain": 10.88
+        },
+        {
+            "source": "root_Otu0000028",
+            "target": "leaf_Otu0000017",
+            "gain": 7.09
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "leaf_Otu0000017",
+            "gain": 6.63
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "leaf_Otu0000017",
+            "gain": 3.42
+        },
+        {
+            "source": "root_Otu0000049",
+            "target": "root_Otu0000146",
+            "gain": 98.08
+        },
+        {
+            "source": "PPT_wt",
+            "target": "root_Otu0000146",
+            "gain": 95.74
+        },
+        {
+            "source": "CN",
+            "target": "root_Otu0000146",
+            "gain": 87.63
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "root_Otu0000146",
+            "gain": 80.19
+        },
+        {
+            "source": "leaf_Otu0000032",
+            "target": "root_Otu0000146",
+            "gain": 66.42
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "leaf_Otu0000016",
+            "gain": 125.64
+        },
+        {
+            "source": "leaf_Otu0000051",
+            "target": "leaf_Otu0000016",
+            "gain": 43.48
+        },
+        {
+            "source": "leaf_Otu0000063",
+            "target": "leaf_Otu0000016",
+            "gain": 31.71
+        },
+        {
+            "source": "plant_OTU46",
+            "target": "leaf_Otu0000016",
+            "gain": 3.75
+        },
+        {
+            "source": "root_Otu0000051",
+            "target": "leaf_Otu0000016",
+            "gain": 3.35
+        },
+        {
+            "source": "leaf_Otu0000030",
+            "target": "leaf_Otu0000002",
+            "gain": 1764.54
+        },
+        {
+            "source": "root_Otu0000030",
+            "target": "leaf_Otu0000002",
+            "gain": 992.48
+        },
+        {
+            "source": "leaf_Otu0000008",
+            "target": "leaf_Otu0000002",
+            "gain": 340.48
+        },
+        {
+            "source": "plant_OTU202",
+            "target": "leaf_Otu0000002",
+            "gain": 280.69
+        },
+        {
+            "source": "root_Otu0000064",
+            "target": "leaf_Otu0000002",
+            "gain": 252.16
+        },
+        {
+            "source": "root_Otu0000021",
+            "target": "root_Otu0000026",
+            "gain": 170.17
+        },
+        {
+            "source": "plant_OTU15",
+            "target": "root_Otu0000026",
+            "gain": 126.92
+        },
+        {
+            "source": "root_Otu0000075",
+            "target": "root_Otu0000026",
+            "gain": 108.57
+        },
+        {
+            "source": "plant_OTU65",
+            "target": "root_Otu0000026",
+            "gain": 93.28
+        },
+        {
+            "source": "leaf_Otu0000001",
+            "target": "root_Otu0000026",
+            "gain": 85.27
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "root_Otu0000017",
+            "gain": 42.07
+        },
+        {
+            "source": "root_Otu0000009",
+            "target": "root_Otu0000017",
+            "gain": 18.13
+        },
+        {
+            "source": "root_Otu0000028",
+            "target": "root_Otu0000017",
+            "gain": 10.79
+        },
+        {
+            "source": "root_Otu0000058",
+            "target": "root_Otu0000017",
+            "gain": 5.67
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "root_Otu0000017",
+            "gain": 3.81
+        },
+        {
+            "source": "plant_richness",
+            "target": "root_Otu0000003",
+            "gain": 18.37
+        },
+        {
+            "source": "leaf_Otu0000073",
+            "target": "root_Otu0000003",
+            "gain": 18.26
+        },
+        {
+            "source": "plant_Shannon",
+            "target": "root_Otu0000003",
+            "gain": 13.68
+        },
+        {
+            "source": "leaf_Otu0000037",
+            "target": "root_Otu0000003",
+            "gain": 13.04
+        },
+        {
+            "source": "leaf_Otu0000018",
+            "target": "root_Otu0000003",
+            "gain": 12.21
+        },
+        {
+            "source": "leaf_Otu0000042",
+            "target": "leaf_Otu0000027",
+            "gain": 5.91
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000027",
+            "gain": 4.25
+        },
+        {
+            "source": "plant_OTU136",
+            "target": "leaf_Otu0000027",
+            "gain": 4.15
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000027",
+            "gain": 3.91
+        },
+        {
+            "source": "Nitrogen",
+            "target": "leaf_Otu0000027",
+            "gain": 3.68
+        },
+        {
+            "source": "plant_OTU192",
+            "target": "leaf_Otu0000033",
+            "gain": 9.71
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000033",
+            "gain": 8.69
+        },
+        {
+            "source": "plant_OTU67",
+            "target": "leaf_Otu0000033",
+            "gain": 8.65
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "leaf_Otu0000033",
+            "gain": 5.76
+        },
+        {
+            "source": "leaf_Otu0000078",
+            "target": "leaf_Otu0000033",
+            "gain": 5.74
+        },
+        {
+            "source": "pH",
+            "target": "root_Otu0000163",
+            "gain": 8.06
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "root_Otu0000163",
+            "gain": 7.66
+        },
+        {
+            "source": "leaf_Otu0000012",
+            "target": "root_Otu0000163",
+            "gain": 4.97
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000163",
+            "gain": 4.01
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "root_Otu0000163",
+            "gain": 2.73
+        },
+        {
+            "source": "root_Otu0000114",
+            "target": "leaf_Otu0000152",
+            "gain": 5.76
+        },
+        {
+            "source": "root_Otu0000021",
+            "target": "leaf_Otu0000152",
+            "gain": 4.07
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "leaf_Otu0000152",
+            "gain": 2.81
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000152",
+            "gain": 2.47
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000152",
+            "gain": 2.36
+        },
+        {
+            "source": "leaf_Otu0000033",
+            "target": "leaf_Otu0000032",
+            "gain": 99.28
+        },
+        {
+            "source": "root_Otu0000046",
+            "target": "leaf_Otu0000032",
+            "gain": 98.64
+        },
+        {
+            "source": "root_Otu0000007",
+            "target": "leaf_Otu0000032",
+            "gain": 93.06
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "leaf_Otu0000032",
+            "gain": 8.75
+        },
+        {
+            "source": "root_Otu0000050",
+            "target": "leaf_Otu0000032",
+            "gain": 8.4
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "root_Otu0000002",
+            "gain": 568.86
+        },
+        {
+            "source": "root_Otu0000030",
+            "target": "root_Otu0000002",
+            "gain": 526.0
+        },
+        {
+            "source": "leaf_Otu0000030",
+            "target": "root_Otu0000002",
+            "gain": 358.28
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000002",
+            "gain": 263.11
+        },
+        {
+            "source": "PPT_sm",
+            "target": "root_Otu0000002",
+            "gain": 151.8
+        },
+        {
+            "source": "leaf_Otu0000100",
+            "target": "root_Otu0000016",
+            "gain": 366.82
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "root_Otu0000016",
+            "gain": 195.83
+        },
+        {
+            "source": "leaf_Otu0000051",
+            "target": "root_Otu0000016",
+            "gain": 167.6
+        },
+        {
+            "source": "leaf_Otu0000063",
+            "target": "root_Otu0000016",
+            "gain": 106.41
+        },
+        {
+            "source": "root_Otu0000011",
+            "target": "root_Otu0000016",
+            "gain": 15.04
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "root_Otu0000028",
+            "gain": 21.82
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "root_Otu0000028",
+            "gain": 16.9
+        },
+        {
+            "source": "root_Otu0000009",
+            "target": "root_Otu0000028",
+            "gain": 15.53
+        },
+        {
+            "source": "leaf_Otu0000017",
+            "target": "root_Otu0000028",
+            "gain": 12.33
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "root_Otu0000028",
+            "gain": 9.18
+        },
+        {
+            "source": "plant_OTU204",
+            "target": "leaf_Otu0000018",
+            "gain": 16.84
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000018",
+            "gain": 13.36
+        },
+        {
+            "source": "root_Otu0000049",
+            "target": "leaf_Otu0000018",
+            "gain": 10.55
+        },
+        {
+            "source": "plant_OTU16",
+            "target": "leaf_Otu0000018",
+            "gain": 9.96
+        },
+        {
+            "source": "root_Otu0000001",
+            "target": "leaf_Otu0000018",
+            "gain": 9.11
+        },
+        {
+            "source": "root_Otu0000002",
+            "target": "leaf_Otu0000030",
+            "gain": 17.19
+        },
+        {
+            "source": "leaf_Otu0000002",
+            "target": "leaf_Otu0000030",
+            "gain": 14.29
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000030",
+            "gain": 1.79
+        },
+        {
+            "source": "plant_OTU7",
+            "target": "leaf_Otu0000030",
+            "gain": 1.54
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000030",
+            "gain": 1.46
+        },
+        {
+            "source": "PPT_sp",
+            "target": "root_Otu0000174",
+            "gain": 97.2
+        },
+        {
+            "source": "plant_OTU113",
+            "target": "root_Otu0000174",
+            "gain": 94.6
+        },
+        {
+            "source": "leaf_Otu0000014",
+            "target": "root_Otu0000174",
+            "gain": 85.48
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000174",
+            "gain": 73.04
+        },
+        {
+            "source": "plant_OTU146",
+            "target": "root_Otu0000174",
+            "gain": 71.56
+        },
+        {
+            "source": "PPT_sp",
+            "target": "leaf_Otu0000179",
+            "gain": 4.05
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "leaf_Otu0000179",
+            "gain": 4.02
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "leaf_Otu0000179",
+            "gain": 3.61
+        },
+        {
+            "source": "plant_OTU149",
+            "target": "leaf_Otu0000179",
+            "gain": 2.72
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000179",
+            "gain": 2.62
+        },
+        {
+            "source": "root_Otu0000004",
+            "target": "leaf_Otu0000025",
+            "gain": 38.49
+        },
+        {
+            "source": "root_Otu0000284",
+            "target": "leaf_Otu0000025",
+            "gain": 37.01
+        },
+        {
+            "source": "plant_OTU159",
+            "target": "leaf_Otu0000025",
+            "gain": 27.42
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "leaf_Otu0000025",
+            "gain": 22.42
+        },
+        {
+            "source": "Potassium",
+            "target": "leaf_Otu0000025",
+            "gain": 20.97
+        },
+        {
+            "source": "root_Otu0000102",
+            "target": "leaf_Otu0000031",
+            "gain": 17.66
+        },
+        {
+            "source": "plant_OTU145",
+            "target": "leaf_Otu0000031",
+            "gain": 17.08
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "leaf_Otu0000031",
+            "gain": 16.47
+        },
+        {
+            "source": "leaf_Otu0000057",
+            "target": "leaf_Otu0000031",
+            "gain": 14.51
+        },
+        {
+            "source": "plant_OTU67",
+            "target": "leaf_Otu0000031",
+            "gain": 12.83
+        },
+        {
+            "source": "Elevation",
+            "target": "root_Otu0000001",
+            "gain": 11.71
+        },
+        {
+            "source": "PPT_at",
+            "target": "root_Otu0000001",
+            "gain": 8.35
+        },
+        {
+            "source": "PPT_sm",
+            "target": "root_Otu0000001",
+            "gain": 6.52
+        },
+        {
+            "source": "MCMT",
+            "target": "root_Otu0000001",
+            "gain": 6.25
+        },
+        {
+            "source": "plant_OTU16",
+            "target": "root_Otu0000001",
+            "gain": 6.04
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "root_Otu0000005",
+            "gain": 443.86
+        },
+        {
+            "source": "root_Otu0000009",
+            "target": "root_Otu0000005",
+            "gain": 220.24
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "root_Otu0000005",
+            "gain": 160.65
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "root_Otu0000005",
+            "gain": 132.6
+        },
+        {
+            "source": "root_Otu0000028",
+            "target": "root_Otu0000005",
+            "gain": 80.12
+        },
+        {
+            "source": "leaf_Otu0000063",
+            "target": "root_Otu0000011",
+            "gain": 398.08
+        },
+        {
+            "source": "leaf_Otu0000100",
+            "target": "root_Otu0000011",
+            "gain": 296.0
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "root_Otu0000011",
+            "gain": 252.32
+        },
+        {
+            "source": "leaf_Otu0000051",
+            "target": "root_Otu0000011",
+            "gain": 140.15
+        },
+        {
+            "source": "root_Otu0000063",
+            "target": "root_Otu0000011",
+            "gain": 111.54
+        },
+        {
+            "source": "root_Otu0000076",
+            "target": "leaf_Otu0000035",
+            "gain": 5.0
+        },
+        {
+            "source": "leaf_Otu0000001",
+            "target": "leaf_Otu0000035",
+            "gain": 4.27
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "leaf_Otu0000035",
+            "gain": 4.14
+        },
+        {
+            "source": "plant_OTU202",
+            "target": "leaf_Otu0000035",
+            "gain": 3.79
+        },
+        {
+            "source": "plant_OTU71",
+            "target": "leaf_Otu0000035",
+            "gain": 3.53
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "leaf_Otu0000009",
+            "gain": 28.92
+        },
+        {
+            "source": "leaf_Otu0000006",
+            "target": "leaf_Otu0000009",
+            "gain": 18.17
+        },
+        {
+            "source": "leaf_Otu0000017",
+            "target": "leaf_Otu0000009",
+            "gain": 8.4
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "leaf_Otu0000009",
+            "gain": 7.9
+        },
+        {
+            "source": "PPT_sm",
+            "target": "leaf_Otu0000009",
+            "gain": 7.33
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000008",
+            "gain": 94.48
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000008",
+            "gain": 91.87
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "leaf_Otu0000008",
+            "gain": 86.58
+        },
+        {
+            "source": "MCMT",
+            "target": "leaf_Otu0000008",
+            "gain": 77.44
+        },
+        {
+            "source": "leaf_Otu0000073",
+            "target": "leaf_Otu0000008",
+            "gain": 75.46
+        },
+        {
+            "source": "Nitrogen",
+            "target": "leaf_Otu0000034",
+            "gain": 18.97
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "leaf_Otu0000034",
+            "gain": 17.42
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "leaf_Otu0000034",
+            "gain": 16.12
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "leaf_Otu0000034",
+            "gain": 15.07
+        },
+        {
+            "source": "plant_OTU65",
+            "target": "leaf_Otu0000034",
+            "gain": 12.08
+        },
+        {
+            "source": "WHC",
+            "target": "root_Otu0000004",
+            "gain": 29.68
+        },
+        {
+            "source": "leaf_Otu0000068",
+            "target": "root_Otu0000004",
+            "gain": 27.32
+        },
+        {
+            "source": "Phosphore",
+            "target": "root_Otu0000004",
+            "gain": 25.63
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "root_Otu0000004",
+            "gain": 22.55
+        },
+        {
+            "source": "plant_OTU145",
+            "target": "root_Otu0000004",
+            "gain": 16.52
+        },
+        {
+            "source": "root_Otu0000009",
+            "target": "root_Otu0000006",
+            "gain": 206.41
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "root_Otu0000006",
+            "gain": 88.57
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "root_Otu0000006",
+            "gain": 59.53
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "root_Otu0000006",
+            "gain": 45.21
+        },
+        {
+            "source": "CN",
+            "target": "root_Otu0000006",
+            "gain": 40.37
+        },
+        {
+            "source": "plant_OTU216",
+            "target": "leaf_Otu0000022",
+            "gain": 21.04
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000022",
+            "gain": 20.51
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000022",
+            "gain": 18.34
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000022",
+            "gain": 16.43
+        },
+        {
+            "source": "leaf_Otu0000012",
+            "target": "leaf_Otu0000022",
+            "gain": 15.04
+        },
+        {
+            "source": "root_Otu0000001",
+            "target": "leaf_Otu0000036",
+            "gain": 7.03
+        },
+        {
+            "source": "plant_OTU67",
+            "target": "leaf_Otu0000036",
+            "gain": 6.8
+        },
+        {
+            "source": "plant_OTU132",
+            "target": "leaf_Otu0000036",
+            "gain": 4.98
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000036",
+            "gain": 4.24
+        },
+        {
+            "source": "root_Otu0000102",
+            "target": "leaf_Otu0000036",
+            "gain": 3.95
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "root_Otu0000238",
+            "gain": 149.24
+        },
+        {
+            "source": "leaf_Otu0000074",
+            "target": "root_Otu0000238",
+            "gain": 137.63
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "root_Otu0000238",
+            "gain": 125.46
+        },
+        {
+            "source": "pH",
+            "target": "root_Otu0000238",
+            "gain": 44.74
+        },
+        {
+            "source": "Sodium",
+            "target": "root_Otu0000238",
+            "gain": 31.62
+        },
+        {
+            "source": "root_Otu0000163",
+            "target": "root_Otu0000199",
+            "gain": 3.64
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "root_Otu0000199",
+            "gain": 3.12
+        },
+        {
+            "source": "root_Otu0000114",
+            "target": "root_Otu0000199",
+            "gain": 1.34
+        },
+        {
+            "source": "plant_OTU18",
+            "target": "root_Otu0000199",
+            "gain": 1.28
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000199",
+            "gain": 1.21
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000157",
+            "gain": 3.14
+        },
+        {
+            "source": "Magnesium",
+            "target": "leaf_Otu0000157",
+            "gain": 2.79
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000157",
+            "gain": 2.61
+        },
+        {
+            "source": "leaf_Otu0000001",
+            "target": "leaf_Otu0000157",
+            "gain": 2.58
+        },
+        {
+            "source": "CN",
+            "target": "leaf_Otu0000157",
+            "gain": 2.58
+        },
+        {
+            "source": "leaf_Otu0000077",
+            "target": "leaf_Otu0000037",
+            "gain": 7.52
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000037",
+            "gain": 7.38
+        },
+        {
+            "source": "Sodium",
+            "target": "leaf_Otu0000037",
+            "gain": 7.25
+        },
+        {
+            "source": "leaf_Otu0000067",
+            "target": "leaf_Otu0000037",
+            "gain": 6.79
+        },
+        {
+            "source": "leaf_Otu0000073",
+            "target": "leaf_Otu0000037",
+            "gain": 6.26
+        },
+        {
+            "source": "leaf_Otu0000078",
+            "target": "leaf_Otu0000023",
+            "gain": 5.9
+        },
+        {
+            "source": "leaf_Otu0000014",
+            "target": "leaf_Otu0000023",
+            "gain": 4.61
+        },
+        {
+            "source": "root_Otu0000058",
+            "target": "leaf_Otu0000023",
+            "gain": 3.51
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000023",
+            "gain": 2.79
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000023",
+            "gain": 2.47
+        },
+        {
+            "source": "plant_OTU88",
+            "target": "root_Otu0000007",
+            "gain": 59.72
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "root_Otu0000007",
+            "gain": 38.54
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "root_Otu0000007",
+            "gain": 33.88
+        },
+        {
+            "source": "root_Otu0000114",
+            "target": "root_Otu0000007",
+            "gain": 31.1
+        },
+        {
+            "source": "plant_OTU1",
+            "target": "root_Otu0000007",
+            "gain": 27.65
+        },
+        {
+            "source": "plant_Shannon",
+            "target": "leaf_Otu0000093",
+            "gain": 29.98
+        },
+        {
+            "source": "leaf_Otu0000012",
+            "target": "leaf_Otu0000093",
+            "gain": 13.67
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000093",
+            "gain": 10.97
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000093",
+            "gain": 8.59
+        },
+        {
+            "source": "plant_OTU72",
+            "target": "leaf_Otu0000093",
+            "gain": 3.91
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000078",
+            "gain": 13.95
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000078",
+            "gain": 12.68
+        },
+        {
+            "source": "leaf_Otu0000023",
+            "target": "leaf_Otu0000078",
+            "gain": 10.22
+        },
+        {
+            "source": "leaf_Otu0000033",
+            "target": "leaf_Otu0000078",
+            "gain": 10.08
+        },
+        {
+            "source": "OC",
+            "target": "leaf_Otu0000078",
+            "gain": 9.72
+        },
+        {
+            "source": "CN",
+            "target": "leaf_Otu0000044",
+            "gain": 12.88
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000044",
+            "gain": 12.29
+        },
+        {
+            "source": "leaf_Otu0000077",
+            "target": "leaf_Otu0000044",
+            "gain": 11.0
+        },
+        {
+            "source": "plant_OTU46",
+            "target": "leaf_Otu0000044",
+            "gain": 10.88
+        },
+        {
+            "source": "leaf_Otu0000070",
+            "target": "leaf_Otu0000044",
+            "gain": 10.83
+        },
+        {
+            "source": "plant_OTU83",
+            "target": "leaf_Otu0000246",
+            "gain": 7.54
+        },
+        {
+            "source": "root_Otu0000041",
+            "target": "leaf_Otu0000246",
+            "gain": 3.08
+        },
+        {
+            "source": "plant_OTU27",
+            "target": "leaf_Otu0000246",
+            "gain": 1.95
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "leaf_Otu0000246",
+            "gain": 1.72
+        },
+        {
+            "source": "leaf_Otu0000152",
+            "target": "leaf_Otu0000246",
+            "gain": 1.67
+        },
+        {
+            "source": "root_Otu0000011",
+            "target": "root_Otu0000100",
+            "gain": 23.01
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "root_Otu0000100",
+            "gain": 14.44
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "root_Otu0000100",
+            "gain": 8.17
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "root_Otu0000100",
+            "gain": 6.02
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000100",
+            "gain": 4.97
+        },
+        {
+            "source": "leaf_Otu0000152",
+            "target": "root_Otu0000114",
+            "gain": 42.8
+        },
+        {
+            "source": "Sodium",
+            "target": "root_Otu0000114",
+            "gain": 21.92
+        },
+        {
+            "source": "leaf_Otu0000066",
+            "target": "root_Otu0000114",
+            "gain": 16.42
+        },
+        {
+            "source": "root_Otu0000122",
+            "target": "root_Otu0000114",
+            "gain": 10.97
+        },
+        {
+            "source": "leaf_Otu0000109",
+            "target": "root_Otu0000114",
+            "gain": 9.33
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "leaf_Otu0000051",
+            "gain": 23.83
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "leaf_Otu0000051",
+            "gain": 17.03
+        },
+        {
+            "source": "leaf_Otu0000063",
+            "target": "leaf_Otu0000051",
+            "gain": 8.7
+        },
+        {
+            "source": "CN",
+            "target": "leaf_Otu0000051",
+            "gain": 1.63
+        },
+        {
+            "source": "Aluminium",
+            "target": "leaf_Otu0000051",
+            "gain": 1.44
+        },
+        {
+            "source": "leaf_Otu0000013",
+            "target": "root_Otu0000049",
+            "gain": 37.64
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "root_Otu0000049",
+            "gain": 36.38
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "root_Otu0000049",
+            "gain": 25.06
+        },
+        {
+            "source": "root_Otu0000146",
+            "target": "root_Otu0000049",
+            "gain": 22.94
+        },
+        {
+            "source": "Elevation",
+            "target": "root_Otu0000049",
+            "gain": 16.45
+        },
+        {
+            "source": "leaf_Otu0000246",
+            "target": "root_Otu0000075",
+            "gain": 42.43
+        },
+        {
+            "source": "leaf_Otu0000029",
+            "target": "root_Otu0000075",
+            "gain": 38.73
+        },
+        {
+            "source": "leaf_Otu0000035",
+            "target": "root_Otu0000075",
+            "gain": 33.73
+        },
+        {
+            "source": "leaf_Otu0000084",
+            "target": "root_Otu0000075",
+            "gain": 33.28
+        },
+        {
+            "source": "leaf_Otu0000078",
+            "target": "root_Otu0000075",
+            "gain": 25.08
+        },
+        {
+            "source": "leaf_Otu0000011",
+            "target": "root_Otu0000063",
+            "gain": 55.84
+        },
+        {
+            "source": "leaf_Otu0000016",
+            "target": "root_Otu0000063",
+            "gain": 32.96
+        },
+        {
+            "source": "root_Otu0000011",
+            "target": "root_Otu0000063",
+            "gain": 24.92
+        },
+        {
+            "source": "root_Otu0000051",
+            "target": "root_Otu0000063",
+            "gain": 9.62
+        },
+        {
+            "source": "root_Otu0000016",
+            "target": "root_Otu0000063",
+            "gain": 2.19
+        },
+        {
+            "source": "plant_OTU132",
+            "target": "leaf_Otu0000084",
+            "gain": 15.38
+        },
+        {
+            "source": "Manganese",
+            "target": "leaf_Otu0000084",
+            "gain": 14.05
+        },
+        {
+            "source": "PPT_sp",
+            "target": "leaf_Otu0000084",
+            "gain": 9.73
+        },
+        {
+            "source": "plant_OTU149",
+            "target": "leaf_Otu0000084",
+            "gain": 8.51
+        },
+        {
+            "source": "plant_OTU71",
+            "target": "leaf_Otu0000084",
+            "gain": 8.03
+        },
+        {
+            "source": "Iron",
+            "target": "root_Otu0000102",
+            "gain": 99.66
+        },
+        {
+            "source": "leaf_Otu0000031",
+            "target": "root_Otu0000102",
+            "gain": 86.06
+        },
+        {
+            "source": "leaf_Otu0000057",
+            "target": "root_Otu0000102",
+            "gain": 63.04
+        },
+        {
+            "source": "leaf_Otu0000074",
+            "target": "root_Otu0000102",
+            "gain": 62.18
+        },
+        {
+            "source": "root_Otu0000114",
+            "target": "root_Otu0000102",
+            "gain": 56.97
+        },
+        {
+            "source": "leaf_Otu0000025",
+            "target": "leaf_Otu0000052",
+            "gain": 10.72
+        },
+        {
+            "source": "root_Otu0000144",
+            "target": "leaf_Otu0000052",
+            "gain": 8.83
+        },
+        {
+            "source": "root_Otu0000021",
+            "target": "leaf_Otu0000052",
+            "gain": 7.05
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000052",
+            "gain": 6.25
+        },
+        {
+            "source": "root_Otu0000102",
+            "target": "leaf_Otu0000052",
+            "gain": 4.49
+        },
+        {
+            "source": "plant_OTU198",
+            "target": "root_Otu0000076",
+            "gain": 13.87
+        },
+        {
+            "source": "plant_OTU132",
+            "target": "root_Otu0000076",
+            "gain": 8.93
+        },
+        {
+            "source": "leaf_Otu0000137",
+            "target": "root_Otu0000076",
+            "gain": 8.9
+        },
+        {
+            "source": "leaf_Otu0000115",
+            "target": "root_Otu0000076",
+            "gain": 8.7
+        },
+        {
+            "source": "leaf_Otu0000116",
+            "target": "root_Otu0000076",
+            "gain": 8.7
+        },
+        {
+            "source": "leaf_Otu0000027",
+            "target": "leaf_Otu0000042",
+            "gain": 37.33
+        },
+        {
+            "source": "Potassium",
+            "target": "leaf_Otu0000042",
+            "gain": 29.83
+        },
+        {
+            "source": "plant_Shannon",
+            "target": "leaf_Otu0000042",
+            "gain": 29.81
+        },
+        {
+            "source": "leaf_Otu0000115",
+            "target": "leaf_Otu0000042",
+            "gain": 25.52
+        },
+        {
+            "source": "leaf_Otu0000022",
+            "target": "leaf_Otu0000042",
+            "gain": 22.14
+        },
+        {
+            "source": "longitude",
+            "target": "root_Otu0000258",
+            "gain": 367.35
+        },
+        {
+            "source": "leaf_Otu0000002",
+            "target": "root_Otu0000258",
+            "gain": 284.76
+        },
+        {
+            "source": "leaf_Otu0000018",
+            "target": "root_Otu0000258",
+            "gain": 282.68
+        },
+        {
+            "source": "PPT_sm",
+            "target": "root_Otu0000258",
+            "gain": 251.9
+        },
+        {
+            "source": "leaf_Otu0000246",
+            "target": "root_Otu0000258",
+            "gain": 239.82
+        },
+        {
+            "source": "leaf_Otu0000027",
+            "target": "leaf_Otu0000137",
+            "gain": 41.34
+        },
+        {
+            "source": "WHC",
+            "target": "leaf_Otu0000137",
+            "gain": 41.04
+        },
+        {
+            "source": "leaf_Otu0000033",
+            "target": "leaf_Otu0000137",
+            "gain": 39.55
+        },
+        {
+            "source": "Calcium",
+            "target": "leaf_Otu0000137",
+            "gain": 38.64
+        },
+        {
+            "source": "leaf_Otu0000042",
+            "target": "leaf_Otu0000137",
+            "gain": 38.19
+        },
+        {
+            "source": "Iron",
+            "target": "leaf_Otu0000057",
+            "gain": 53.3
+        },
+        {
+            "source": "plant_OTU149",
+            "target": "leaf_Otu0000057",
+            "gain": 38.92
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000057",
+            "gain": 35.57
+        },
+        {
+            "source": "latitude",
+            "target": "leaf_Otu0000057",
+            "gain": 27.34
+        },
+        {
+            "source": "root_Otu0000007",
+            "target": "leaf_Otu0000057",
+            "gain": 27.31
+        },
+        {
+            "source": "leaf_Otu0000052",
+            "target": "leaf_Otu0000094",
+            "gain": 1.34
+        },
+        {
+            "source": "leaf_Otu0000036",
+            "target": "leaf_Otu0000094",
+            "gain": 1.16
+        },
+        {
+            "source": "Phosphore",
+            "target": "leaf_Otu0000094",
+            "gain": 1.05
+        },
+        {
+            "source": "leaf_Otu0000003",
+            "target": "leaf_Otu0000094",
+            "gain": 1.0
+        },
+        {
+            "source": "plant_OTU78",
+            "target": "leaf_Otu0000096",
+            "gain": 6.46
+        },
+        {
+            "source": "Elevation",
+            "target": "leaf_Otu0000096",
+            "gain": 4.72
+        },
+        {
+            "source": "leaf_Otu0000015",
+            "target": "leaf_Otu0000096",
+            "gain": 4.35
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000096",
+            "gain": 3.89
+        },
+        {
+            "source": "plant_OTU113",
+            "target": "leaf_Otu0000096",
+            "gain": 3.11
+        },
+        {
+            "source": "longitude",
+            "target": "leaf_Otu0000109",
+            "gain": 15.32
+        },
+        {
+            "source": "root_Otu0000007",
+            "target": "leaf_Otu0000109",
+            "gain": 10.8
+        },
+        {
+            "source": "root_Otu0000163",
+            "target": "leaf_Otu0000109",
+            "gain": 10.57
+        },
+        {
+            "source": "plant_OTU18",
+            "target": "leaf_Otu0000109",
+            "gain": 10.52
+        },
+        {
+            "source": "leaf_Otu0000101",
+            "target": "leaf_Otu0000109",
+            "gain": 3.82
+        },
+        {
+            "source": "leaf_Otu0000084",
+            "target": "leaf_Otu0000120",
+            "gain": 10.86
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "leaf_Otu0000120",
+            "gain": 9.72
+        },
+        {
+            "source": "pH",
+            "target": "leaf_Otu0000120",
+            "gain": 8.51
+        },
+        {
+            "source": "Nitrogen",
+            "target": "leaf_Otu0000120",
+            "gain": 8.44
+        },
+        {
+            "source": "CN",
+            "target": "leaf_Otu0000120",
+            "gain": 8.17
+        },
+        {
+            "source": "root_Otu0000174",
+            "target": "leaf_Otu0000068",
+            "gain": 234.3
+        },
+        {
+            "source": "plant_OTU136",
+            "target": "leaf_Otu0000068",
+            "gain": 225.39
+        },
+        {
+            "source": "plant_OTU10",
+            "target": "leaf_Otu0000068",
+            "gain": 224.31
+        },
+        {
+            "source": "root_Otu0000070",
+            "target": "leaf_Otu0000068",
+            "gain": 222.25
+        },
+        {
+            "source": "Manganese",
+            "target": "leaf_Otu0000068",
+            "gain": 179.41
+        },
+        {
+            "source": "leaf_Otu0000044",
+            "target": "root_Otu0000064",
+            "gain": 5.73
+        },
+        {
+            "source": "WHC",
+            "target": "root_Otu0000064",
+            "gain": 4.95
+        },
+        {
+            "source": "Phosphore",
+            "target": "root_Otu0000064",
+            "gain": 4.58
+        },
+        {
+            "source": "longitude",
+            "target": "root_Otu0000064",
+            "gain": 3.03
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000064",
+            "gain": 2.69
+        },
+        {
+            "source": "leaf_Otu0000115",
+            "target": "root_Otu0000070",
+            "gain": 11.17
+        },
+        {
+            "source": "latitude",
+            "target": "root_Otu0000070",
+            "gain": 6.56
+        },
+        {
+            "source": "Iron",
+            "target": "root_Otu0000070",
+            "gain": 6.48
+        },
+        {
+            "source": "longitude",
+            "target": "root_Otu0000070",
+            "gain": 6.17
+        },
+        {
+            "source": "Elevation",
+            "target": "root_Otu0000070",
+            "gain": 6.15
+        },
+        {
+            "source": "root_Otu0000006",
+            "target": "root_Otu0000058",
+            "gain": 5.1
+        },
+        {
+            "source": "root_Otu0000005",
+            "target": "root_Otu0000058",
+            "gain": 4.87
+        },
+        {
+            "source": "leaf_Otu0000005",
+            "target": "root_Otu0000058",
+            "gain": 3.84
+        },
+        {
+            "source": "leaf_Otu0000009",
+            "target": "root_Otu0000058",
+            "gain": 1.86
+        }
+    ]
+}

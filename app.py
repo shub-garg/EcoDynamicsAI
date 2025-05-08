@@ -1,14 +1,16 @@
-import streamlit as st
+import os
 import pandas as pd
 import numpy as np
 import xgboost as xgb
-import os
+import streamlit as st
+import streamlit.components.v1 as components
 from sklearn.metrics import mean_squared_error
 
 # Define paths for model and result files
 MODEL_DIR_FULL = 'models2/full/'
 MODEL_DIR_TOP20 = 'models2/top20/'
 RESULTS_FILE = 'models2/model_results.csv'
+GRAPH_FILE = 'src/graph.html'
 
 # Load model results
 @st.cache_data
@@ -24,6 +26,17 @@ results_df = load_results()
 # Sidebar
 st.sidebar.title("OTU Prediction App")
 
+# Graph Button
+if st.sidebar.button("View Graph Visualization"):
+    if os.path.exists(GRAPH_FILE):
+        # Display the graph in Streamlit
+        with open(GRAPH_FILE, "r") as graph_file:
+            graph_html = graph_file.read()
+            components.html(graph_html, height=600, width=1000)
+    else:
+        st.warning("Graph file not found. Ensure the graph is generated and saved as 'graph.html' in the 'visualization' folder.")
+
+# File Upload and Target Selection
 uploaded_file = st.sidebar.file_uploader("Upload CSV for Prediction", type=["csv"])
 target = st.sidebar.selectbox("Select Target Variable", results_df['target'].unique() if not results_df.empty else [])
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Network Graph - Responsive Resize</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fafafa;
+        }
+
+        .node circle {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        .node text {
+            font-size: 10px;
+            pointer-events: none;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-width: 2px;
+            fill: none;
+        }
+
+        .arrowhead {
+            fill: #ff6347;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 8px;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    const tooltip = d3.select("#tooltip");
+
+    const svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const container = svg.append("g");
+
+    // Arrow marker
+    svg.append("defs").append("marker")
+        .attr("id", "arrow")
+        .attr("viewBox", "0 -5 10 10")
+        .attr("refX", 15)
+        .attr("refY", 0)
+        .attr("markerWidth", 6)
+        .attr("markerHeight", 6)
+        .attr("orient", "auto")
+        .append("path")
+        .attr("d", "M0,-5L10,0L0,5")
+        .attr("class", "arrowhead");
+
+    // Load JSON Data
+    d3.json("../visualization/feature_importance.json").then(data => {
+
+        const simulation = d3.forceSimulation(data.nodes)
+            .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-250))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        // Draw links
+        const link = container.append("g")
+            .selectAll(".link")
+            .data(data.links)
+            .enter()
+            .append("line")
+            .attr("class", "link")
+            .attr("marker-end", "url(#arrow)")
+            .attr("stroke", "#999")
+            .attr("stroke-width", 2);
+
+        // Draw nodes
+        const node = container.append("g")
+            .selectAll(".node")
+            .data(data.nodes)
+            .enter()
+            .append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragStarted)
+                .on("drag", dragged)
+                .on("end", dragEnded));
+
+        node.append("circle")
+            .attr("r", 10)
+            .attr("fill", "#69b3a2");
+
+        node.append("text")
+            .attr("dy", -15)
+            .attr("text-anchor", "middle")
+            .text(d => d.id);
+
+        // Hover Tooltip Logic
+        node.on("mouseover", (event, d) => {
+            const nodeId = d.id;
+
+            const outgoingLinks = data.links.filter(link => {
+                const sourceId = typeof link.source === "object" ? link.source.id : link.source;
+                return sourceId === nodeId;
+            });
+
+            const incomingLinks = data.links.filter(link => {
+                const targetId = typeof link.target === "object" ? link.target.id : link.target;
+                return targetId === nodeId;
+            });
+
+            let tooltipContent = `<strong>${nodeId}</strong><br><br>`;
+
+            tooltipContent += `<strong>Outgoing:</strong><br>`;
+            outgoingLinks.forEach(link => {
+                const targetId = typeof link.target === "object" ? link.target.id : link.target;
+                tooltipContent += `To: ${targetId} (Gain: ${link.gain.toFixed(2)})<br>`;
+            });
+
+            tooltipContent += `<br><strong>Incoming:</strong><br>`;
+            incomingLinks.forEach(link => {
+                const sourceId = typeof link.source === "object" ? link.source.id : link.source;
+                tooltipContent += `From: ${sourceId} (Gain: ${link.gain.toFixed(2)})<br>`;
+            });
+
+            tooltip.html(tooltipContent)
+                .style("visibility", "visible")
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY + 10) + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+        });
+
+        // Simulation tick
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+
+        function dragStarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragEnded(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Zoom and Pan
+        svg.call(
+            d3.zoom()
+            .extent([[0, 0], [width, height]])
+            .scaleExtent([0.5, 3])
+            .on("zoom", (event) => {
+                container.attr("transform", event.transform);
+            })
+        );
+
+        // Handle window resize
+        window.addEventListener("resize", () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            svg.attr("width", width).attr("height", height);
+            simulation.force("center", d3.forceCenter(width / 2, height / 2));
+            simulation.alpha(0.3).restart();
+        });
+    });
+</script>
+
+</body>
+</html>
