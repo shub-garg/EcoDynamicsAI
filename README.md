@@ -2,6 +2,7 @@
 
 EcoDynamicsAI is a comprehensive framework designed to model and analyze plant-pathogen-microbe interactions using advanced data preprocessing, feature selection, and machine learning approaches. It leverages methods like Recursive Feature Selection, Conditional Independence Testing, Polynomial Expansions, and Ensemble Learning to predict microbial richness and diversity in plant-pathogen systems.
 
+Chech out the website: https://ecodynamicsai-wupsitbyy78rvvhl7aapkt.streamlit.app/
 
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/d742f2c3-69a3-4f78-9f61-1f8c8b5bcdc4" />
 
