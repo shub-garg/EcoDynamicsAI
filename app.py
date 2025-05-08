@@ -1,4 +1,4 @@
-import os
+import os, json
 import pandas as pd
 import numpy as np
 import xgboost as xgb
@@ -6,115 +6,94 @@ import streamlit as st
 import streamlit.components.v1 as components
 from sklearn.metrics import mean_squared_error
 
-# Define paths for model and result files
+# --- Paths ---
 MODEL_DIR_FULL = 'models2/full/'
 MODEL_DIR_TOP20 = 'models2/top20/'
-RESULTS_FILE = 'models2/model_results.csv'
-GRAPH_FILE = 'src/graph.html'
+RESULTS_FILE   = 'models2/model_results.csv'
+JSON_FILE      = 'visualization/feature_importance.json'
+TEMPLATE_HTML  = 'graph_template.html'
 
-# Load model results
 @st.cache_data
 def load_results():
     if os.path.exists(RESULTS_FILE):
         return pd.read_csv(RESULTS_FILE)
-    else:
-        st.error("Model results file not found. Ensure models are trained and saved.")
-        return pd.DataFrame()
+    st.error("Model results file not found.")
+    return pd.DataFrame()
 
 results_df = load_results()
 
-# Sidebar
-st.sidebar.title("OTU Prediction App")
+st.title("OTU Prediction App")
 
-# Graph Button
-if st.sidebar.button("View Graph Visualization"):
-    if os.path.exists(GRAPH_FILE):
-        # Display the graph in Streamlit
-        with open(GRAPH_FILE, "r") as graph_file:
-            graph_html = graph_file.read()
-            components.html(graph_html, height=600, width=1000)
+# — Show graph button —
+if st.button("Show Feature Importance Graph"):
+    if os.path.exists(JSON_FILE) and os.path.exists(TEMPLATE_HTML):
+        # load raw JSON and template
+        data = json.load(open(JSON_FILE, 'r'))
+        tpl  = open(TEMPLATE_HTML, 'r').read()
+        # inject JSON as a JS literal
+        html = tpl.replace("__DATA__", json.dumps(data))
+        components.html(html, height=700, width=700, scrolling=True)
     else:
-        st.warning("Graph file not found. Ensure the graph is generated and saved as 'graph.html' in the 'visualization' folder.")
+        st.error("Missing `feature_importance.json` or `graph_template.html`.")
 
-# File Upload and Target Selection
-uploaded_file = st.sidebar.file_uploader("Upload CSV for Prediction", type=["csv"])
-target = st.sidebar.selectbox("Select Target Variable", results_df['target'].unique() if not results_df.empty else [])
+st.sidebar.title("Controls")
+uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+target = st.sidebar.selectbox(
+    "Select Target", options=results_df['target'].unique() if not results_df.empty else []
+)
 
 if uploaded_file and target:
-    st.write("### Uploaded Data")
-    input_data = pd.read_csv(uploaded_file)
-    st.write(input_data.head())
+    df = pd.read_csv(uploaded_file)
+    st.subheader("Data Preview")
+    st.dataframe(df.head())
 
-    # Determine the paired column
-    pair = target.replace('leaf_Otu', 'root_Otu') if target.startswith('leaf_Otu') else target.replace('root_Otu', 'leaf_Otu')
+    # drop paired column
+    pair = (target.replace('leaf_Otu', 'root_Otu')
+            if target.startswith('leaf_Otu')
+            else target.replace('root_Otu','leaf_Otu'))
+    if pair in df.columns:
+        df.drop(columns=[pair], inplace=True)
+        st.info(f"Dropped `{pair}`")
 
-    # Drop the paired column if present
-    if pair in input_data.columns:
-        input_data.drop(columns=[pair], inplace=True)
-        st.info(f"Dropped paired column: {pair}")
+    actual = df[target] if target in df.columns else None
+    X = df.drop(columns=[target], errors='ignore')
 
-    # Extract actual values for RMSE calculation (if present)
-    actual_values = input_data[target].copy() if target in input_data.columns else None
-    has_actuals = actual_values is not None
+    if X.isnull().any().any():
+        st.warning("Missing values in features.")
 
-    # Load the best model for the target
-    full_model_path = os.path.join(MODEL_DIR_FULL, f"xgb_full_{target}.model")
-    top20_model_path = os.path.join(MODEL_DIR_TOP20, f"xgb_top20_{target}.model")
-
-    # Prepare data for prediction
-    X = input_data.drop(columns=[target], errors='ignore')
-
-    # Check for missing values
-    if X.isnull().sum().sum() > 0:
-        st.warning("Uploaded data contains missing values. Predictions may be affected.")
-
-    # Predictions using Full Model
-    if os.path.exists(full_model_path):
-        model = xgb.Booster()
-        model.load_model(full_model_path)
-        dmatrix = xgb.DMatrix(X)
-        preds_full = model.predict(dmatrix)
-
-        # Calculate RMSE for Full Model
-        rmse_full = np.sqrt(mean_squared_error(actual_values, preds_full)) if has_actuals else "N/A"
-
-        # Output Full Model Predictions and RMSE
-        output_full = pd.DataFrame({
-            f"Predicted_{target}_Full": preds_full
-        })
-        if has_actuals:
-            output_full['Actual'] = actual_values
-        st.write("### Full Model Predictions")
-        st.write(output_full)
-        st.write(f"RMSE (Full Model): {rmse_full}")
+    # Full model
+    full_path = os.path.join(MODEL_DIR_FULL, f"xgb_full_{target}.model")
+    if os.path.exists(full_path):
+        m = xgb.Booster(); m.load_model(full_path)
+        preds = m.predict(xgb.DMatrix(X))
+        rmse  = (np.sqrt(mean_squared_error(actual, preds))
+                 if actual is not None else "N/A")
+        out = pd.DataFrame({f"Pred_Full": preds})
+        if actual is not None: out["Actual"] = actual.values
+        st.subheader("Full Model")
+        st.dataframe(out)
+        st.markdown(f"**RMSE (Full):** {rmse}")
     else:
-        st.warning("Full model not found for the selected target.")
+        st.warning("Full model missing.")
 
-    # Predictions using Top-20 Model
-    if os.path.exists(top20_model_path):
-        model_top20 = xgb.Booster()
-        model_top20.load_model(top20_model_path)
-
-        # Extract top-20 features from the results dataframe
-        top20_feats = results_df[results_df['target'] == target]['top20_feats'].values[0].split(';')
-
-        if all(f in X.columns for f in top20_feats):
-            dmatrix_top20 = xgb.DMatrix(X[top20_feats])
-            preds_top20 = model_top20.predict(dmatrix_top20)
-
-            # Calculate RMSE for Top-20 Model
-            rmse_top20 = np.sqrt(mean_squared_error(actual_values, preds_top20)) if has_actuals else "N/A"
-
-            # Output Top-20 Model Predictions and RMSE
-            output_top20 = pd.DataFrame({
-                f"Predicted_{target}_Top20": preds_top20
-            })
-            if has_actuals:
-                output_top20['Actual'] = actual_values
-            st.write("### Top-20 Model Predictions")
-            st.write(output_top20)
-            st.write(f"RMSE (Top-20 Model): {rmse_top20}")
+    # Top-20 model
+    top20_path = os.path.join(MODEL_DIR_TOP20, f"xgb_top20_{target}.model")
+    if os.path.exists(top20_path):
+        feats = (results_df.loc[results_df.target==target, 'top20_feats']
+                 .iat[0].split(';'))
+        if all(f in X.columns for f in feats):
+            m2 = xgb.Booster(); m2.load_model(top20_path)
+            preds2 = m2.predict(xgb.DMatrix(X[feats]))
+            rmse2  = (np.sqrt(mean_squared_error(actual, preds2))
+                      if actual is not None else "N/A")
+            out2 = pd.DataFrame({f"Pred_Top20": preds2})
+            if actual is not None: out2["Actual"] = actual.values
+            st.subheader("Top-20 Model")
+            st.dataframe(out2)
+            st.markdown(f"**RMSE (Top-20):** {rmse2}")
         else:
-            st.warning("Not all top-20 features are present in the uploaded dataset.")
+            st.warning("Not all 20 features in upload.")
+    else:
+        st.warning("Top-20 model missing.")
 else:
-    st.write("Upload a CSV and select a target to start prediction.")
+    st.info("Upload data & select a target to predict.")

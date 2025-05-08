@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D3 Network Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body, html { margin: 0; padding: 0; overflow: hidden; background-color: #fafafa; }
+    .node circle { stroke: #333; stroke-width: 1.5px; }
+    .node text { font-size: 10px; pointer-events: none; }
+    .link { stroke: #999; stroke-width: 2px; fill: none; }
+    .arrowhead { fill: #ff6347; }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 8px; color: #fff;
+      font-size: 12px; border-radius: 4px;
+      visibility: hidden; pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="tooltip" id="tooltip"></div>
+  <script>
+    // — Inline JSON data injected by Streamlit —
+    const data = __DATA__;
+    
+    let width = window.innerWidth,
+        height = window.innerHeight;
+    const tooltip = d3.select("#tooltip");
+    const svg = d3.select("body").append("svg")
+                  .attr("width", width)
+                  .attr("height", height);
+    const container = svg.append("g");
+
+    // arrow marker
+    svg.append("defs")
+       .append("marker")
+       .attr("id", "arrow")
+       .attr("viewBox", "0 -5 10 10")
+       .attr("refX", 15)
+       .attr("refY", 0)
+       .attr("markerWidth", 6)
+       .attr("markerHeight", 6)
+       .attr("orient", "auto")
+       .append("path")
+       .attr("d", "M0,-5L10,0L0,5")
+       .attr("class", "arrowhead");
+
+    const simulation = d3.forceSimulation(data.nodes)
+      .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+      .force("charge", d3.forceManyBody().strength(-250))
+      .force("center", d3.forceCenter(width/2, height/2));
+
+    const link = container.append("g")
+      .selectAll("line")
+      .data(data.links)
+      .enter()
+      .append("line")
+      .attr("class", "link")
+      .attr("marker-end", "url(#arrow)");
+
+    const node = container.append("g")
+      .selectAll("g")
+      .data(data.nodes)
+      .enter()
+      .append("g")
+      .attr("class", "node")
+      .call(d3.drag()
+        .on("start", dragStarted)
+        .on("drag", dragged)
+        .on("end", dragEnded)
+      );
+
+    node.append("circle").attr("r", 10).attr("fill", "#69b3a2");
+    node.append("text")
+        .attr("dy", -15)
+        .attr("text-anchor", "middle")
+        .text(d => d.id);
+
+    node.on("mouseover", (event, d) => {
+      const outgoing = data.links.filter(l => (l.source.id||l.source) === d.id);
+      const incoming = data.links.filter(l => (l.target.id||l.target) === d.id);
+      let html = `<strong>${d.id}</strong><br><br>
+                  <strong>Outgoing:</strong><br>` +
+                 outgoing.map(l => {
+                   const tgt = l.target.id||l.target;
+                   return `To ${tgt} (Gain ${l.gain.toFixed(2)})`;
+                 }).join("<br>") +
+                 `<br><br><strong>Incoming:</strong><br>` +
+                 incoming.map(l => {
+                   const src = l.source.id||l.source;
+                   return `From ${src} (Gain ${l.gain.toFixed(2)})`;
+                 }).join("<br>");
+      tooltip.html(html)
+             .style("visibility", "visible")
+             .style("left", (event.pageX+10)+"px")
+             .style("top",  (event.pageY+10)+"px");
+    }).on("mouseout", () => {
+      tooltip.style("visibility", "hidden");
+    });
+
+    simulation.on("tick", () => {
+      link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+      node.attr("transform", d => `translate(${d.x},${d.y})`);
+    });
+
+    svg.call(d3.zoom()
+      .scaleExtent([0.5,3])
+      .on("zoom", event => container.attr("transform", event.transform))
+    );
+
+    window.addEventListener("resize", () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      svg.attr("width", width).attr("height", height);
+      simulation.force("center", d3.forceCenter(width/2, height/2));
+      simulation.alpha(0.3).restart();
+    });
+
+    function dragStarted(event, d) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x; d.fy = d.y;
+    }
+    function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
+    function dragEnded(event, d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null; d.fy = null;
+    }
+  </script>
+</body>
+</html>
