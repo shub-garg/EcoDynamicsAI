@@ -42,6 +42,26 @@ target = st.sidebar.selectbox(
     "Select Target", options=results_df['target'].unique() if not results_df.empty else []
 )
 
+# — New: Top-10 feature charts as soon as a target is selected —
+if target:
+    # Full model
+    full_path = os.path.join(MODEL_DIR_FULL, f"xgb_full_{target}.model")
+    if os.path.exists(full_path):
+        m_full = xgb.Booster()
+        m_full.load_model(full_path)
+        imp_full = m_full.get_score(importance_type='gain')
+        df_full = (
+            pd.DataFrame.from_dict(imp_full, orient='index', columns=['gain'])
+              .reset_index().rename(columns={'index':'feature'})
+              .sort_values('gain', ascending=False)
+              .head(20)
+        )
+        st.subheader("Top 20 Features by Gain")
+        st.bar_chart(df_full.set_index('feature')['gain'])
+    else:
+        st.info("Full model not available for this target.")
+
+# — Upload & prediction logic (unchanged) —
 if uploaded_file and target:
     df = pd.read_csv(uploaded_file)
     st.subheader("Data Preview")
@@ -61,7 +81,7 @@ if uploaded_file and target:
     if X.isnull().any().any():
         st.warning("Missing values in features.")
 
-    # Full model
+    # Full model prediction
     full_path = os.path.join(MODEL_DIR_FULL, f"xgb_full_{target}.model")
     if os.path.exists(full_path):
         m = xgb.Booster(); m.load_model(full_path)
@@ -76,7 +96,7 @@ if uploaded_file and target:
     else:
         st.warning("Full model missing.")
 
-    # Top-20 model
+    # Top-20 model prediction
     top20_path = os.path.join(MODEL_DIR_TOP20, f"xgb_top20_{target}.model")
     if os.path.exists(top20_path):
         feats = (results_df.loc[results_df.target==target, 'top20_feats']
