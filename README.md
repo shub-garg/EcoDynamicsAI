@@ -2,6 +2,9 @@
 
 EcoDynamicsAI is a comprehensive framework designed to model and analyze plant-pathogen-microbe interactions using advanced data preprocessing, feature selection, and machine learning approaches. It leverages methods like Recursive Feature Selection, Conditional Independence Testing, Polynomial Expansions, and Ensemble Learning to predict microbial richness and diversity in plant-pathogen systems.
 
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/d742f2c3-69a3-4f78-9f61-1f8c8b5bcdc4" />
+
 ---
 
 ## 📁 Directory Structure
@@ -32,6 +35,9 @@ EcoDynamicsAI is a comprehensive framework designed to model and analyze plant-p
 ├── LICENSE
 ├── ecodynamicsAI_description.pptx
 └── requirements.txt
+└── app.py
+└── test.csv
+└── test1.csv
 ```
 
 ---
@@ -45,6 +51,7 @@ EcoDynamicsAI is a comprehensive framework designed to model and analyze plant-p
 5. **Polynomial Expansion:** Captures non-linear interactions among top-ranked features.
 6. **OTU-Level Modeling:** Predicts individual OTU abundance separately for leaf and root compartments.
 7. **PowerPoint Report Generation:** Auto-generates PowerPoint summaries of key findings.
+8. **Streamlit Web App:** User-friendly interface for running predictions using pre-trained models.
 
 ---
 
@@ -52,7 +59,7 @@ EcoDynamicsAI is a comprehensive framework designed to model and analyze plant-p
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your_username/EcoDynamicsAI.git
+git clone https://github.com/shub-garg/EcoDynamicsAI.git
 cd EcoDynamicsAI
 ```
 
@@ -92,6 +99,39 @@ python src/model_individual_root_leaf_otu.py
 ```
 
 ---
+
+## 🛠️ Usage
+
+##$ Running the Streamlit App:
+
+- Ensure the `models2/` directory contains the pre-trained models and `model_results.csv`.
+- Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+- The app will be accessible at: `http://localhost:8501`
+
+### 2. Deploying the App on Streamlit Cloud:
+
+- The app is already deployed at [EcoDynamicsAI Streamlit App](https://ecodynamicsai-wupsitbyy78rvvhl7aapkt.streamlit.app).
+
+- To deploy updates:
+  - Push changes to the GitHub repository.
+  - The Streamlit Cloud will automatically redeploy the app.
+
+### 3. Using the Web App:
+
+- Upload a CSV file containing the relevant features (test1.csv and test.csv for example).
+- Select the target OTU variable for prediction.
+- View the predictions and RMSE for both Full and Top-20 models.
+
+**Expected Columns:**
+- Environmental features (e.g., `latitude`, `longitude`, `MAT`, etc.)
+- OTU features (e.g., `leaf_Otu0000001`, `root_Otu0000001`, etc.)
+
+
 
 ## 📈 Results and Analysis
 
