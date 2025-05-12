@@ -1,4 +1,5 @@
-import os, json
+import os
+import json
 import pandas as pd
 import numpy as np
 import xgboost as xgb
@@ -7,13 +8,38 @@ import streamlit.components.v1 as components
 from sklearn.metrics import mean_squared_error
 
 # --- Paths ---
-MODEL_DIR_FULL = 'models2/full/'
-MODEL_DIR_TOP20 = 'models2/top20/'
-RESULTS_FILE   = 'models2/model_results.csv'
-JSON_FILE      = 'visualization/feature_importance.json'
-TEMPLATE_HTML  = 'graph_template.html'
-SAMPLE_FILE    = 'sample.csv'
+MODEL_DIR_FULL   = 'models2/full/'
+MODEL_DIR_TOP20  = 'models2/top20/'
+RESULTS_FILE     = 'models2/model_results.csv'
+JSON_FILE        = 'visualization/feature_importance.json'
+TEMPLATE_HTML    = 'graph_template.html'
+SAMPLE_FILE      = 'sample.csv'
+MAPPING_FILE     = '16S_dataSet1_41396_2018_152_MOESM2_ESM.xlsx'
 
+# --- Load mapping Excel and build legend df ---
+# assumes sheet has columns: '16S (0.03)', 'gyrB(0.020)', 'Taxonomy', 'Family'
+mapping_df = pd.read_excel(MAPPING_FILE)
+# melt so each OTU ends up in one column
+legend_df = (
+    mapping_df
+      .melt(
+         id_vars=['Taxonomy','Family'],
+         value_vars=['16S (0.03)','gyrB(0.020)'],
+         var_name='Marker',
+         value_name='Raw_OTU'
+      )
+      # normalize OTU IDs: strip leading zeros and uppercase
+      .assign(
+         OTU_ID=lambda d: d['Raw_OTU']
+                         .str.replace(r'^Otu0*', 'Otu', regex=True)
+      )
+      [['OTU_ID','Marker','Taxonomy','Family']]
+      .dropna(subset=['OTU_ID'])
+      .drop_duplicates()
+      .reset_index(drop=True)
+)
+
+# --- Load results_df ---
 def load_results():
     if os.path.exists(RESULTS_FILE):
         return pd.read_csv(RESULTS_FILE)
@@ -22,45 +48,51 @@ def load_results():
 
 results_df = load_results()
 
+# --- Layout ---
 st.title("OTU Prediction App")
 
 # Display model and dataset information
 st.markdown("**Model:** XGBoost with Early Stopping (Hyperparameter Optimized)")
 st.markdown("**Dataset:** South-France Dataset")
 
-# — Show graph button —
-if st.button("Show Abiotic-Biotic Interaction Network"):
-    if os.path.exists(JSON_FILE) and os.path.exists(TEMPLATE_HTML):
-        # load raw JSON and template
-        data = json.load(open(JSON_FILE, 'r'))
-        tpl  = open(TEMPLATE_HTML, 'r').read()
-        # inject JSON as a JS literal
-        html = tpl.replace("__DATA__", json.dumps(data))
-        components.html(html, height=700, width=700, scrolling=True)
-    else:
-        st.error("Missing `feature_importance.json` or `graph_template.html`.")
-
+# Sidebar
 st.sidebar.title("EcoDynamicsAI")
 
-uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+# OTU Legend pop-up
+with st.sidebar.expander("🔍 OTU Legend"):
+    st.markdown(
+        "This table shows, for each OTU (16S or gyrB), its taxonomic classification."
+    )
+    st.dataframe(legend_df)
 
-target = st.sidebar.selectbox(
-    "Select Target", options=results_df['target'].unique() if not results_df.empty else []
-)
-
-# Pop-up for sample file format
+# Sample format pop-up
 if st.sidebar.button("View Sample File Format"):
     st.sidebar.markdown("### Sample File Format")
     st.sidebar.write(pd.read_csv(SAMPLE_FILE).head())
     st.sidebar.info("Ensure the data has appropriate column names matching the target variable and features.")
 
-# — New: Top-10 feature charts as soon as a target is selected —
+# File upload & target selection
+uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+target = st.sidebar.selectbox(
+    "Select Target",
+    options=results_df['target'].unique() if not results_df.empty else []
+)
+
+# Main: show D3 graph button
+if st.button("Show Abiotic-Biotic Interaction Network"):
+    if os.path.exists(JSON_FILE) and os.path.exists(TEMPLATE_HTML):
+        data = json.load(open(JSON_FILE, 'r'))
+        tpl  = open(TEMPLATE_HTML, 'r').read()
+        html = tpl.replace("__DATA__", json.dumps(data))
+        components.html(html, height=700, width=700, scrolling=True)
+    else:
+        st.error("Missing `feature_importance.json` or `graph_template.html`.")
+
+# As soon as a target is selected, show top-20 feature chart
 if target:
-    # Full model
     full_path = os.path.join(MODEL_DIR_FULL, f"xgb_full_{target}.model")
     if os.path.exists(full_path):
-        m_full = xgb.Booster()
-        m_full.load_model(full_path)
+        m_full = xgb.Booster(); m_full.load_model(full_path)
         imp_full = m_full.get_score(importance_type='gain')
         df_full = (
             pd.DataFrame.from_dict(imp_full, orient='index', columns=['gain'])
@@ -73,13 +105,13 @@ if target:
     else:
         st.info("Full model not available for this target.")
 
-# — Upload & prediction logic —
+# Upload + prediction logic
 if uploaded_file and target:
     df = pd.read_csv(uploaded_file)
     st.subheader("Data Preview")
     st.dataframe(df.head())
 
-    # drop paired column
+    # drop paired OTU column
     pair = (target.replace('leaf_Otu', 'root_Otu')
             if target.startswith('leaf_Otu')
             else target.replace('root_Otu','leaf_Otu'))
