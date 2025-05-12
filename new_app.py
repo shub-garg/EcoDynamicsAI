@@ -14,7 +14,7 @@ RESULTS_FILE     = 'models2/model_results.csv'
 JSON_FILE        = 'visualization/feature_importance.json'
 TEMPLATE_HTML    = 'graph_template.html'
 SAMPLE_FILE      = 'sample.csv'
-MAPPING_FILE     = '16S_dataSet1_41396_2018_152_MOESM2_ESM.xlsx'  # your Excel mapping
+MAPPING_FILE     = '16S_dataSet1_41396_2018_152_MOESM2_ESM.xlsx'
 
 # --- Load mapping Excel and build legend df ---
 # assumes sheet has columns: '16S (0.03)', 'gyrB(0.020)', 'Taxonomy', 'Family'
