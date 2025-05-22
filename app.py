@@ -230,10 +230,10 @@ def plant_otu_legend_page():
     plant_df = pd.read_excel(PLANT_MAPPING_FILE)
     st.dataframe(plant_df)
 
-st.sidebar.title("Navigation")
+st.sidebar.title("EcoDynamicsAI")
 page_selection = st.sidebar.radio(
     "Select Page",
-    ["Main App", "Top 20 OTU Features", "Plant-OTU Legend"]
+    ["Single OTU Models", "Microbiota/Pathobiota Models", "Plant-OTU Legend"]
 )
 
 if page_selection == "Top 20 OTU Features":
