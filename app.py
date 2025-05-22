@@ -236,7 +236,7 @@ page_selection = st.sidebar.radio(
     ["Single OTU Models", "Microbiota/Pathobiota Models", "Plant-OTU Legend"]
 )
 
-if page_selection == "Top 20 OTU Features":
+if page_selection == "Microbiota/Pathobiota Models":
     top20_otu_page()
 elif page_selection == "Plant-OTU Legend":
     plant_otu_legend_page()
